@@ -18,5 +18,7 @@ from django.urls import path, re_path, include
 from rango import views
 
 urlpatterns = [
-    re_path('^.*$', views.index, name='index'),
+
+    path('about/', views.about, name='about'),
+
 ]
