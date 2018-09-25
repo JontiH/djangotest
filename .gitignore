@@ -2,3 +2,4 @@ venv
 manage.py
 db.*
 .idea*
+*.pyc
