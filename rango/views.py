@@ -4,9 +4,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    response = HttpResponse("YO WASSUP DOG")
-    response.write('<p><a href= "rango/about/" >click here to go to about</a></p>')
-    response.write("<p>ggg</p>")
+
+    context_dict = {'boldmessage': "silly stuff"}
+
+    response = render(request, 'rango/index.html', context=context_dict)
+
     return response
 
 
